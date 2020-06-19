@@ -11,35 +11,42 @@ class DishDetail extends Component {
 
   renderDish(dish) {
     return(
-        <Card>
-            <CardImg top src={dish.image} alt={dish.name} />
-            <CardBody>
-              <CardTitle>{dish.name}</CardTitle>
-              <CardText>{dish.description}</CardText>
-            </CardBody>
-        </Card>
+        <div className="col-12 col-md-5 m-1">
+            <Card>
+                <CardImg top src={dish.image} alt={dish.name} />
+                <CardBody>
+                <CardTitle>{dish.name}</CardTitle>
+                <CardText>{dish.description}</CardText>
+                </CardBody>
+            </Card>
+        </div>
     );
   }
 
   renderComments(commentsArray) {
     const commentlist = commentsArray.map((item) => {
         return (
-          <div key={item.id}>
-            {item.comment}<br></br><br></br>
-            -- {item.author} , {item.date}<br></br><br></br>
-          </div>
+            <li key={item.id}>
+                <p>{item.comment}</p>
+                    <p>-- {item.author},
+                    &nbsp;
+                    {new Intl.DateTimeFormat('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: '2-digit'
+                        }).format(new Date(item.date))}
+                    </p>
+            </li>
         );
     });
 
     if (commentsArray != null)
         return(
-            <div className="container">
-                <div className="row">
-                    <h4>Comments</h4>
-                </div>
-                <div className="row">
+            <div className="col-12 col-md-5 m-1">
+                <h4>Comments</h4>
+                <ul className='list-unstyled'>
                     {commentlist}
-                </div>
+              </ul>      
           </div>  
         );
     else
@@ -53,12 +60,8 @@ class DishDetail extends Component {
       if (dish != null)
         return (
             <div className="row">
-                <div className="col-12 col-md-5 m-1">
-                    {this.renderDish(this.props.selectedDish)}
-                </div>
-                <div className="col-12 col-md-5 m-1">
-                    {this.renderComments(this.props.selectedDish.comments)}
-                </div>
+                {this.renderDish(this.props.selectedDish)}
+                {this.renderComments(this.props.selectedDish.comments)}
             </div>
         );
     else
