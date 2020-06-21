@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
+// functional components
 function RenderDish({dish}) {
     return(
         <div className="col-12 col-md-5 m-1">
