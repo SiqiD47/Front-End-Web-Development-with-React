@@ -3,7 +3,7 @@ import { Breadcrumb, BreadcrumbItem, Button, Row, Col, Label } from 'reactstrap'
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Link } from 'react-router-dom';
 
-// validate the form
+// validate the local form
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
 const minLength = (len) => (val) => val && (val.length >= len);
@@ -65,7 +65,7 @@ class Contact extends Component {
                     </div>
                 </div>
 
-                {/* Controlled Form */}
+                {/* Local Form */}
                 <div className="row row-content">
                    <div className="col-12">
                       <h3>Send us your Feedback</h3>
