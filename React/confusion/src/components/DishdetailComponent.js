@@ -152,7 +152,6 @@ function RenderComments({commentsArray, addComment, dishId}) {
 
 const DishDetail = (props) => {
     //console.log('dishdetail render() is invoked');
-    const dish = props.dish;
     if (props.isLoading) {
         return(
             <div className="container">
