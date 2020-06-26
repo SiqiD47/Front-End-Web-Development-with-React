@@ -61,6 +61,7 @@ export const fetchComments = () => (dispatch) => {
           throw error;
         }
       },
+      // don't hear back anything from server
       error => {
             var errmess = new Error(error.message);
             throw errmess;
