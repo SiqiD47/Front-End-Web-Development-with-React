@@ -1,4 +1,4 @@
-**To run this webiste:
+**To run this webiste:**
 
 1. go to the json-server folder and run: json-server --watch db.json -d 2000 -p 3001
 	=> connect the server to get/post data
@@ -6,7 +6,7 @@
 	=> run the website
 
 
-**Deployment:
+**Deployment:**
 
 1. Run "npm build" and copy all the files in the React/confusion/build folder to the server.
 
