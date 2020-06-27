@@ -1,4 +1,4 @@
-#To run this webiste:
+## To run this webiste:
 
 1. Go to the json-server folder and run: 
 	
@@ -13,7 +13,7 @@
    => run the website
 
 
-#Deployment:
+## Deployment:
 
 1. Run **npm build** and copy all the files in the React/confusion/build folder to the server.
 
