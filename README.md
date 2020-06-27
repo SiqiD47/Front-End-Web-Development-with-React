@@ -1,26 +1,24 @@
-***To run this webiste:***
+#To run this webiste:
 
-1. go to the json-server folder and run: 
+1. Go to the json-server folder and run: 
 	
-   json-server --watch db.json -d 2000 -p 3001
+   **json-server --watch db.json -d 2000 -p 3001**
 	
-   => *connect the server to get/post data*
+   => connect the server to get/post data
 
-2. go to the React/confusion fold and run: 
+2. Then go to the React/confusion fold and run: 
 
-   npm start
+   **npm start**
 	
-   => *run the website*
+   => run the website
 
 
-**Deployment:**
+#Deployment:
 
-1. Run "npm build" and copy all the files in the React/confusion/build folder to the server.
+1. Run **npm build** and copy all the files in the React/confusion/build folder to the server.
 
    Or alternatively,
 
-2. Host the website on the JSON server: move all the files in the React/confusion/build folder the json-server/public folder, then run 
-   
-   "json-server --watch db.json -d 2000 -p 3001". 
+2. Host the website on the JSON server: move all the files in the React/confusion/build folder to the json-server/public folder, then run **json-server --watch db.json -d 2000 -p 3001**. 
 
    The website will be hosted on: http://localhost:3001.
