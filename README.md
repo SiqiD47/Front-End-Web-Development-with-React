@@ -6,7 +6,7 @@
 	
    => connect the server to get/post data
 
-2. Then go to the React/confusion fold and run: 
+2. Then go to the React/confusion folder and run: 
 
    **npm start**
 	
