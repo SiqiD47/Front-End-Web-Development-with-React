@@ -27,6 +27,8 @@
 
 2. Host the website on the JSON server: 
 
-   move all the files in the React/confusion/build folder to the json-server/public folder, then run **json-server --watch db.json -d 2000 -p 3001**. 
+   move all the files in the React/confusion/build folder to the json-server/public folder, then run:
+   
+   **json-server --watch db.json -d 2000 -p 3001**. 
 
    The website will be hosted on: http://localhost:3001.
