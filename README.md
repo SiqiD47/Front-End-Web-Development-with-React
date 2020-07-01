@@ -19,11 +19,16 @@
    => to run the website.
 
 
+
+
+
 ## Deployment:
 
 1. Run **npm build** and copy all the files in the React/confusion/build folder to the server.
 
+
    Or alternatively,
+   
 
 2. Host the website on the JSON server: 
 
