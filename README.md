@@ -1,6 +1,6 @@
 ## To run this webiste:
 
-1. In the React/confusion folder, run 
+1. In the React/confusion folder, run:
 
    **npm install** 
   
